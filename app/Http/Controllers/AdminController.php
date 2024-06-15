@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\ROom;
 
+use App\Models\Booking;
+
 class AdminController extends Controller
 {
     public function index()
@@ -129,4 +131,20 @@ class AdminController extends Controller
 
         return redirect()->back();
     }
+
+    public function bookings()
+    {
+        $data=Booking::all();
+
+        return view('admin.booking', compact('data'));
+    }
+
+    public function delete_booking($id)
+    {
+        $data = Booking::find($id);
+
+        $data->delete();
+
+        return redirect()->back();
+    }   
 }
