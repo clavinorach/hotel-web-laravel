@@ -12,6 +12,8 @@ use App\Models\ROom;
 
 use App\Models\Booking;
 
+use App\Models\Gallery;
+
 class AdminController extends Controller
 {
     public function index()
@@ -166,6 +168,41 @@ class AdminController extends Controller
         $booking->status = 'Rejected';
 
         $booking->save();
+
+        return redirect()->back();
+    }
+
+    public function view_gallery()
+    {
+        $gallery = Gallery::all();
+        return view('admin.gallery', compact('gallery'));
+    }
+
+    public function upload_gallery(Request $request) 
+    {
+        $data = new Gallery;
+
+        $image = $request-> image;
+
+        if($image)
+        {
+            $imagename=time().'.'.$image->getClientOriginalExtension();
+
+            $request = $image->move('gallery', $imagename);
+
+            $data->image = $imagename;
+
+            $data->save();
+
+            return redirect()->back();
+        }
+    }
+
+    public function delete_gallery($id)
+    {
+        $data = Gallery::find($id);
+
+        $data->delete();
 
         return redirect()->back();
     }
