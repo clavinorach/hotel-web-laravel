@@ -14,6 +14,8 @@ use App\Models\Booking;
 
 use App\Models\Gallery;
 
+use App\Models\Contact;
+
 class AdminController extends Controller
 {
     public function index()
@@ -26,7 +28,10 @@ class AdminController extends Controller
             {
 
                 $room = Room::all();
-                return view('home.index', compact('room'));
+
+                $gallery = Gallery::all();
+
+                return view('home.index', compact('room', 'gallery'));
 
             }
 
@@ -46,7 +51,9 @@ class AdminController extends Controller
     {
         $room = Room::all();
 
-        return view('home.index' ,compact('room'));
+        $gallery = Gallery::all();
+
+        return view('home.index' ,compact('room', 'gallery'));
     }
 
     public function create_room()
@@ -205,5 +212,13 @@ class AdminController extends Controller
         $data->delete();
 
         return redirect()->back();
+    }
+
+    public function all_messages()
+    {
+
+        $data = Contact::all();
+
+        return view('admin.all_message', compact('data'));
     }
 }
