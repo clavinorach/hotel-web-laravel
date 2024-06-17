@@ -56,7 +56,7 @@ Create a new MySQL database for the project. You can do this using phpMyAdmin or
 **Using phpMyAdmin:**
 **Login to phpMyAdmin:** Setup your XAMPP and open your web browser and go to your phpMyAdmin login page (usually http://localhost/phpmyadmin).
 
-**Create New Database:** Click on the "Databases" tab and enter hotel in the "Create database" field. Choose the appropriate collation (usually utf8mb4_general_ci) and click the "Create" button.
+**Create New Database:** Click on the "Databases" tab and enter hotel in the "Create database" field. And make database named "Hotel".
 
 ## Step 3: Run Migrations
 
