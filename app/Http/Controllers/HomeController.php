@@ -12,6 +12,8 @@ use App\Models\Contact;
 
 use App\Models\Gallery;
 
+use Illuminate\Support\Facades\Auth; 
+
 class HomeController extends Controller
 {
     public function room_details($id)
@@ -109,5 +111,11 @@ class HomeController extends Controller
         return view('home.contact_us');
     }
 
+    public function user_bookings()
+    {
+        $data = Booking::with('room')->get(); // Ensure to load the related room data
+    
+        return view('home.user_bookings', compact('data'));
+    }
     
 } 

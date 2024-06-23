@@ -54,3 +54,5 @@ route::get('/our_rooms',[HomeController::class, 'our_rooms']);
 route::get('/hotel_gallery',[HomeController::class, 'hotel_gallery']);
 
 route::get('/contact_us',[HomeController::class, 'contact_us']);
+
+Route::get('/user_bookings', [HomeController::class, 'user_bookings']);
