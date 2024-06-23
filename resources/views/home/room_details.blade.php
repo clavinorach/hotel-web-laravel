@@ -38,7 +38,7 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Our Room</h2>
-                     <p>Lorem Ipsum available, but the majority have suffered </p>
+                     <p>Our beautifully designed rooms offer a tranquil retreat from the hustle and bustle of daily life</p>
                   </div>
                </div>
             </div>

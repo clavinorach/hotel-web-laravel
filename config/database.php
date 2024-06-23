@@ -39,7 +39,7 @@ return [
                 'port' => env('DB_PORT', '3306'),
                 'database' => env('DB_DATABASE', 'hotel'), // Use 'DB_DATABASE' environment variable
                 'username' => env('DB_USERNAME', 'root'),  // Use 'DB_USERNAME' environment variable
-                'password' => env('DB_PASSWORD', 'clavino185'),// Use 'DB_PASSWORD' environment variable
+                'password' => env('DB_PASSWORD', ''),// Use 'DB_PASSWORD' environment variable
                 'unix_socket' => env('DB_SOCKET', ''),
                 'charset' => 'utf8mb4',
                 'collation' => 'utf8mb4_unicode_ci',

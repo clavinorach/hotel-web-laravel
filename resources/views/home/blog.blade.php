@@ -15,7 +15,7 @@
                         <figure><img src="images/blog1.jpg" alt="#"/></figure>
                      </div>
                      <div class="blog_room">
-                        <h3>Bed Room</h3>
+                        <h3>Regular Room</h3>
                         <span>The standard chunk </span>
                         <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
                      </div>
@@ -27,8 +27,8 @@
                         <figure><img src="images/blog2.jpg" alt="#"/></figure>
                      </div>
                      <div class="blog_room">
-                        <h3>Bed Room</h3>
-                        <span>The standard chunk </span>
+                        <h3>Premium Room</h3>
+                        <span>The premium room </span>
                         <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
                      </div>
                   </div>
@@ -39,8 +39,8 @@
                         <figure><img src="images/blog3.jpg" alt="#"/></figure>
                      </div>
                      <div class="blog_room">
-                        <h3>Bed Room</h3>
-                        <span>The standard chunk </span>
+                        <h3>Deluxe Room</h3>
+                        <span>The deluxe room </span>
                         <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
                      </div>
                   </div>

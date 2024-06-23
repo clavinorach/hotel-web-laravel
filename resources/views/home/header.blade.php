@@ -18,24 +18,24 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="{{url('/')}}">Home</a>
+                           <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+                                 <a class="nav-link" href="{{ url('/') }}">Home</a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="{{url('our_rooms')}}">Our room</a>
+                              <li class="nav-item {{ Request::is('our_rooms') ? 'active' : '' }}">
+                                 <a class="nav-link" href="{{ url('our_rooms') }}">Our room</a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="{{url('hotel_gallery')}}">Gallery</a>
+                              <li class="nav-item {{ Request::is('hotel_gallery') ? 'active' : '' }}">
+                                 <a class="nav-link" href="{{ url('hotel_gallery') }}">Gallery</a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="{{url('contact_us')}}">Contact Us</a>
-                              </li>
+                              <li class="nav-item {{ Request::is('contact_us') ? 'active' : '' }}">
+                                 <a class="nav-link" href="{{ url('contact_us') }}">Contact Us</a>
+                              </li>
 
 
                               @if (Route::has('login'))
                             
                                 @auth
-                                       <x-app-layout>
+                                       <x-app-layout >
 
                                        </x-app-layout>
                                 @else
