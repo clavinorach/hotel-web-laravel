@@ -74,12 +74,8 @@
                         <th class="th_deg">Phone</th>
                         <th class="th_deg">Arrival Date</th>
                         <th class="th_deg">Leaving Date</th>
-                        <th class="th_deg">Status</th>
                         <th class="th_deg">Room Title</th>
                         <th class="th_deg">Price</th>
-                        <th class="th_deg">Image</th>
-                        <th class="th_deg">Delete</th>
-                        <th class="th_deg">Status Update</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -91,20 +87,8 @@
                         <td>{{ $booking->phone }}</td>
                         <td>{{ $booking->start_date }}</td>
                         <td>{{ $booking->end_date }}</td>
-                        <td>{{ $booking->room->room_title }}</td>
+                        <td>{{ $booking->room->room_title}}</td>
                         <td>{{ $booking->room->price }}</td>
-                        <td>
-                            <img class="img_deg" src="/room/{{ $booking->room->image }}" alt="Room Image">
-                        </td>
-                        <td>
-                            <a onclick="return confirm('Are you sure to delete this?');" class="btn btn-danger" href="{{ url('delete_booking', $booking->id) }}">Delete</a>
-                        </td>
-                        <td>
-                            <span style="padding-bottom: 10px;">
-                                <a class="btn btn-success" href="{{ url('approve_book', $booking->id) }}">Approve</a>
-                            </span>
-                            <a class="btn btn-warning" href="{{ url('reject_book', $booking->id) }}">Reject</a>
-                        </td>
                     </tr>
                     @endforeach
                 </tbody>

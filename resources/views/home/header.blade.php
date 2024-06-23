@@ -25,7 +25,7 @@
                                  <a class="nav-link" href="{{ url('our_rooms') }}">Our room</a>
                               </li>
                               <li class="nav-item {{ Request::is('hotel_gallery') ? 'active' : '' }}">
-                                 <a class="nav-link" href="{{ url('hotel_gallery') }}">Gallery</a>
+                                 <a class="nav-link" href="{{ url('user_bookings') }}">Booked Room</a>
                               </li>
                               <li class="nav-item {{ Request::is('contact_us') ? 'active' : '' }}">
                                  <a class="nav-link" href="{{ url('contact_us') }}">Contact Us</a>
