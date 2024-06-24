@@ -37,12 +37,12 @@
                         <form class="book_now">
                            <div class="row">
                               <div class="col-md-12">
-                                 <span>Arrival</span>
+                                 <span>Check-in</span>
                                  <img class="date_cua" src="images/date.png">
                                  <input class="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy">
                               </div>
                               <div class="col-md-12">
-                                 <span>Departure</span>
+                                 <span>Check-out</span>
                                  <img class="date_cua" src="images/date.png">
                                  <input class="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy">
                               </div>
