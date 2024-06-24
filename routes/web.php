@@ -55,4 +55,9 @@ route::get('/hotel_gallery',[HomeController::class, 'hotel_gallery']);
 
 route::get('/contact_us',[HomeController::class, 'contact_us']);
 
-Route::get('/user_bookings', [HomeController::class, 'user_bookings']);
+Route::get('/user_bookings', [HomeController::class, 'user_bookings'])->middleware(['auth']);
+
+// Route::middleware(['auth'])->group(function () {
+//     Route::get('/booking', [BookingController::class, 'index'])->name('booking.index');
+//     Route::post('/booking', [BookingController::class, 'store'])->name('booking.store');
+// });

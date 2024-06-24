@@ -66,6 +66,7 @@
     <div class="page-header">
         <div class="container-fluid">
             <table class="table_deg">
+            @csrf
                 <thead>
                     <tr>
                         <th class="th_deg">Room ID</th>

@@ -24,17 +24,18 @@
                               <li class="nav-item {{ Request::is('our_rooms') ? 'active' : '' }}">
                                  <a class="nav-link" href="{{ url('our_rooms') }}">Our room</a>
                               </li>
-                              <li class="nav-item {{ Request::is('hotel_gallery') ? 'active' : '' }}">
-                                 <a class="nav-link" href="{{ url('user_bookings') }}">Booked Room</a>
-                              </li>
                               <li class="nav-item {{ Request::is('contact_us') ? 'active' : '' }}">
                                  <a class="nav-link" href="{{ url('contact_us') }}">Contact Us</a>
                               </li>
 
 
+
                               @if (Route::has('login'))
                             
                                 @auth
+                                <li class="nav-item {{ Request::is('user_bookings') ? 'active' : '' }}">
+                                    <a class="nav-link" href="{{ url('user_bookings') }}">Booked Room</a>
+                                 </li>
                                        <x-app-layout >
 
                                        </x-app-layout>
@@ -43,7 +44,7 @@
                                              <a class="btn btn-success" href="{{url('login')}}">Login</a>
                                           </li>
                                     @if (Route::has('register'))
-                                          <li class="nav-item">
+                                          <li class="nav-item" >
                                              <a class="btn btn-primary" href="{{url('register')}}">Register</a>
                                           </li>
                                     @endif

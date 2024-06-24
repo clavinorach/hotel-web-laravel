@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
+
+    
     public function room_details($id)
     {
         $room = Room::find($id);
@@ -37,6 +39,8 @@ class HomeController extends Controller
         $data = new Booking;
 
         $data->room_id = $id;
+        
+        $data->user_id = Auth::id();
 
         $data->name = $request-> name;
 
@@ -113,8 +117,9 @@ class HomeController extends Controller
 
     public function user_bookings()
     {
-        $data = Booking::with('room')->get(); // Ensure to load the related room data
-    
+        // Ambil data booking milik pengguna yang sedang login
+        $data = Booking::where('user_id', Auth::id())->with('room', 'user')->get();
+
         return view('home.user_bookings', compact('data'));
     }
     

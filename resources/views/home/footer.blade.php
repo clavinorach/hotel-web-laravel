@@ -14,7 +14,6 @@
                      <h3>Menu Link</h3>
                      <ul class="link_menu">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="">About</a></li>
                         <li><a href="{{url('our_rooms')}}">Our Room</a></li>
                         <li><a href="{{url('hotel_gallery')}}">Gallery</a></li>
                         <li><a href="{{url('contact')}}">Contact Us</a></li>
