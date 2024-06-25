@@ -39,7 +39,7 @@
                                 @auth\
 
                                 <li class="nav-item {{ Request::is('user_bookings') ? 'active' : '' }}">
-                                    <a class="nav-link" href="{{url('contact_us')}}" style="padding-top: 9px;">
+                                    <a class="nav-link" href="{{url('user_bookings')}}" style="padding-top: 9px;">
                                            Booked Room
                                     </a>
                             	   </li>
