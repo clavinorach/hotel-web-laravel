@@ -39,6 +39,7 @@
 
 html {
      scroll-behavior: smooth;
+     height: 100%;
 }
 
 body {
@@ -520,7 +521,7 @@ button {
 .our_room {
      background-color: #f4f5f7;
      padding: 60px 0 30px 0;
-     margin-top: 90px;
+     margin-top: 5px;
 }
 
 .our_room .titlepage {
@@ -770,6 +771,7 @@ button {
      margin-top: 90px;
      padding-top: 60px;
      text-align: center;
+     width: 100%;
 }
 
 .footer h3 {
@@ -956,5 +958,7 @@ line-height: 35px;
 }
 
 
-
+.page-content {
+     height: 300px;
+}
 
