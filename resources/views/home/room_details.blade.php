@@ -19,6 +19,22 @@
 
          }
    </style>
+       <style>
+        .btn-primary {
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            
+        }
+
+        .btn-primary:hover {
+            background-color: skyblue;
+        }
+    </style>
    </head>
    <!-- body -->
    <body class="main-layout">
@@ -127,8 +143,8 @@
                      <input type="date" name="end_date" id="end_date">
                   </div>
 
-                  <div style="padding-top: 20px;">
-                     <input type="submit" style="background-color: skyblue;" class="btn btn-primary" value="Book Room">
+                  <div class="btn btn-primary" >
+                     <input type="submit" value="Book Room">
                   </div>
 
                   </form>
