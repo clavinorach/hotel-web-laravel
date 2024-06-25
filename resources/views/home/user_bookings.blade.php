@@ -40,6 +40,17 @@
             width:150px;
             height:auto;
         }
+        .status-approved {
+            color: green;
+        }
+
+        .status-rejected {
+            color: red;
+        }
+
+        .status-waiting {
+            color: yellow;
+        }
 
 </style>
 
@@ -75,6 +86,7 @@
                         <th class="th_deg">Phone</th>
                         <th class="th_deg">Arrival Date</th>
                         <th class="th_deg">Leaving Date</th>
+                        <th class="th_deg">Status</th>
                         <th class="th_deg">Room Title</th>
                         <th class="th_deg">Price</th>
                     </tr>
@@ -88,6 +100,19 @@
                         <td>{{ $booking->phone }}</td>
                         <td>{{ $booking->start_date }}</td>
                         <td>{{ $booking->end_date }}</td>
+                        <td>
+                            <span class="
+                                @if($booking->status == 'Approved')
+                                    status-approved
+                                @elseif($booking->status == 'Rejected')
+                                    status-rejected
+                                @elseif($booking->status == 'waiting')
+                                    status-waiting
+                                @endif
+                            ">
+                                {{ ucfirst($booking->status) }}
+                            </span>
+                        </td>
                         <td>{{ $booking->room->room_title}}</td>
                         <td>{{ $booking->room->price }}</td>
                     </tr>

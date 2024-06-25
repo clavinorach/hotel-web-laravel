@@ -50,7 +50,7 @@ route::get('/send_mail/{id}',[AdminController::class, 'send_mail'])->middleware(
 route::post('/mail/{id}',[AdminController::class, 'mail'])->middleware(['auth','admin']);
 
 route::get('/our_rooms',[HomeController::class, 'our_rooms']);
-
+    
 route::get('/hotel_gallery',[HomeController::class, 'hotel_gallery']);
 
 route::get('/contact_us',[HomeController::class, 'contact_us']);
