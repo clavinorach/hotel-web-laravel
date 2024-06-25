@@ -83,7 +83,6 @@
                         <th class="th_deg">Room ID</th>
                         <th class="th_deg">Customer Name</th>
                         <th class="th_deg">Email</th>
-                        <th class="th_deg">Phone</th>
                         <th class="th_deg">Arrival Date</th>
                         <th class="th_deg">Leaving Date</th>
                         <th class="th_deg">Status</th>
@@ -97,7 +96,6 @@
                         <td>{{ $booking->room_id }}</td>
                         <td>{{ $booking->name }}</td>
                         <td>{{ $booking->email }}</td>
-                        <td>{{ $booking->phone }}</td>
                         <td>{{ $booking->start_date }}</td>
                         <td>{{ $booking->end_date }}</td>
                         <td>
