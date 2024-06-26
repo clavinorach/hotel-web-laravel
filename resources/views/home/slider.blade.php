@@ -48,8 +48,8 @@
                   <img class="date_cua" src="images/date.png">
                   <input class="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy">
                 </div>
-                <div class="col-md-12">
-                  <button class="book_btn" href="{{url('our_rooms')}}">Book Now</button>
+                <div class="col-md-12 text-center">
+                  <a class="book_btn" href="{{url('our_rooms')}}" style="text-align: center;">Book Now</a>
                 </div>
               </div>
             </form>

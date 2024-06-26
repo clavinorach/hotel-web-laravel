@@ -37,7 +37,7 @@
                            <input class="contactus" placeholder="Phone Number" type="number" name="phone" required>                          
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" name="message" required>Message</textarea>
+                           <textarea class="textarea" placeholder="Message" type="type" name="message" required></textarea>
                         </div>
                         <div class="col-md-12">
                            <button type="submit" class="send_btn">Send</button>
