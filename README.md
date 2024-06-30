@@ -3,6 +3,11 @@
 # Hotel Management System Laravel Website
 The Hotel Management System Laravel Website is a comprehensive web-based solution designed for the efficient management of hotel operations and guest services. Developed as a final project for a **Tugas Besar 2** Web Programming class, this system leverages the robust and modern PHP framework, Laravel, to provide a seamless and user-friendly interface for hotel administrators and staff.
 
+<img width="720" alt="image" src="https://github.com/clavinorach/hotel-web-laravel/assets/143194377/89047448-4b09-4221-9d92-4611dc428c3b">
+<img width="720" alt="image" src="https://github.com/clavinorach/hotel-web-laravel/assets/143194377/e0976da1-bc31-4396-b61f-31571352ebe3">
+
+
+
 
 ## Step 1: Environment Configuration
 
